@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav{
+    height: 100px;
+    border-bottom: 2px solid #EFEFEF;
+}
+
+/* NAVBAR */
+.navbar-brand{
+    font-family: "DM Serif Text", serif;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 0px 30px;
+    color: #35CC32 !important;
+    border-radius: 28px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
+}
+.navbar ul{
+    padding-top: 0px;
+}
+
+.navbar ul li a{
+    display: flex;
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    background-color: #35CC32;
+    color: #ffffff !important;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none; /* Menghapus bayangan tombol jika ada */
+    padding: 0; /* Opsional, untuk menghilangkan padding default */
+    margin-top: -20px;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* HERO */
+#btn-hero{
+    background-color: #AE27EE;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    border-radius: 28px;
+}
+
+
+/* SEKILAS PRODUK */
+.sekilas-produk{
+    height: auto;
+    width: auto;
+    display: grid;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 220px;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 28px;
+    margin-bottom: 20px;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-img{
+    height: 180px;
+    width: 180px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 28px;
+}
+
+.card-title{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ket-card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Carousel */
