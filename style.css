@@ -1,144 +1,224 @@
 * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  padding-top: 100px;
 }
 
 .nav {
-    height: 100px;
-    border-bottom: 2px solid #EFEFEF;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  border-bottom: 2px solid #efefef;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
 }
 
 /* NAVBAR */
 .navbar-brand {
-    font-family: "DM Serif Text", serif;
-    font-weight: bold;
-    font-size: 32px;
-    padding: 0px 30px;
-    color: #35CC32 !important;
-    border-radius: 28px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
-}
-
-.navbar ul {
-    padding-top: 0px;
+  font-family: "DM Serif Text", serif;
+  font-weight: bold;
+  font-size: 32px;
+  padding: 0px 30px;
+  color: #35cc32 !important;
+  border-radius: 28px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
 }
 
 .navbar ul li a {
-    display: flex;
-    width: 100px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    background-color: #35CC32;
-    color: #ffffff !important;
-    border-radius: 20px;
-    justify-content: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
+  display: flex;
+  width: 100px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  background-color: #35cc32;
+  color: #ffffff !important;
+  border-radius: 20px;
+  justify-content: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
+  transition: transform 0.3s ease;
+}
+.navbar ul li:hover{
+  transform: scale(1.05);
 }
 
 .navbar-toggler {
-    border: none;
-    outline: none;
-    box-shadow: none;
-    /* Menghapus bayangan tombol jika ada */
-    padding: 0;
-    /* Opsional, untuk menghilangkan padding default */
-    margin-top: -20px;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
-    border: none;
-    outline: none;
-    box-shadow: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 /* HERO */
 #btn-hero {
-    background-color: #AE27EE;
-    color: #ffffff;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    border-radius: 28px;
+  background-color: #ae27ee;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 28px;
+  transition: transform 0.3s ease;
 }
-
+#btn-hero:hover {
+  transform: scale(1.05);
+}
 
 /* SEKILAS PRODUK */
 .img-card {
-    flex-wrap: wrap;
-    justify-content: start;
-    align-content: end;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: end;
 }
 
 .sekilas-produk-card {
-    height: auto;
-    width: auto;
-    display: grid;
-    justify-content: end;
+  height: auto;
+  width: auto;
+  display: grid;
+  justify-content: center;
+  float: right;
+  padding-bottom: 40px;
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-    width: 220px;
-    height: auto;
-    font-family: "Montserrat", sans-serif;
-    border-radius: 28px;
-    margin-bottom: 20px;
+  width: 210px;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 28px;
+  margin-bottom: 20px;
 }
 
 .card-body {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card-img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    margin-bottom: 20px;
-    border-radius: 28px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+  border-radius: 28px;
 }
 
 .card-title {
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
 }
-.card-title:hover{
-    color: #AE27EE;
+.card-title:hover {
+  color: #ae27ee;
 }
 
 .ket-card {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Lightbox */
+.background-grey {
+  background-color: #efefef;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery-img {
+  transition: transform 0.3s ease;
+}
+.gallery-img:hover {
+  transform: scale(1.05); /* Optional: Zoom effect on hover */
+}
+
+.gallery-vertical {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+  margin-bottom: 80px;
+}
+
+/* Mengatur agar gambar dalam modal selalu di-center */
+.modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.modal-dialog {
+  max-width: 90%; /* Sesuaikan ukuran maksimum modal */
+}
+.modal-content {
+  background: transparent; /* Optional: Menghilangkan background modal */
+  border: none; /* Optional: Menghilangkan border modal */
+}
+
+/* Kontak */
+.kontak {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.kontak-list {
+  display: flex;
+  align-items: start;
+}
+
+.kontak-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.kontak-link {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  text-decoration: none;
+}
+
+.kontak-link:hover {
+  text-decoration: underline;
+}
+
+
+
+@media (max-width: 992px) {
+  .sekilas-produk {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .sekilas-produk-card {
+    margin-top: 20px;
+  }
 }
-
-@media (max-width: 1199.98px) {
-
-    .sekilas-produk{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .sekilas-produk-card{
-        margin-top: 20px;
-    }
-}
-/* Carousel */
