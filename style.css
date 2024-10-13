@@ -148,11 +148,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.gallery-img {
+.gallery-img{
   transition: transform 0.3s ease;
+  border-radius: 28px;
 }
 .gallery-img:hover {
-  transform: scale(1.05); /* Optional: Zoom effect on hover */
+  transform: scale(1.02); /* Optional: Zoom effect on hover */
+  cursor: pointer;
 }
 
 .gallery-vertical {
@@ -171,11 +173,12 @@ body {
   height: 100%;
 }
 .modal-dialog {
-  max-width: 90%; /* Sesuaikan ukuran maksimum modal */
+  max-width: fit-content; /* Sesuaikan ukuran maksimum modal */
+  justify-content: center;
 }
 .modal-content {
-  background: transparent; /* Optional: Menghilangkan background modal */
-  border: none; /* Optional: Menghilangkan border modal */
+  background: none;
+  border: none;
 }
 
 /* Kontak */
@@ -183,6 +186,11 @@ body {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.kontak-judul{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 .kontak-list {
@@ -194,10 +202,12 @@ body {
   width: 30px;
   height: 30px;
   margin-right: 15px;
+  justify-content: center;
+  align-items: center;
 }
 
 .kontak-link {
-  font-size: 1.5rem;
+  font-size: auto;
   font-weight: normal;
   font-family: "Montserrat", sans-serif;
   color: #000000;
@@ -208,7 +218,79 @@ body {
   text-decoration: underline;
 }
 
+.maps{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+.maps iframe{
+  border-radius: 28px;
+}
+
+/* Testimoni */
+.head-testimoni{
+  font-family: "Montserrat", sans-serif;
+}
+
+.head-testimoni h2{
+  font-weight: bold;
+}
+
+.testimoni-card{
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
+}
+
+.testimoni-content{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-top: 28px;
+}
+
+.customer-img{
+  margin-right: 20px;
+}
+
+/* FAQ */
+.faq{
+  font-family: "Montserrat", sans-serif
+}
+
+#btn-video-faq{
+  margin-top: -20px;
+}
+
+#btn-video-faq:hover{
+  transform: scale(1.05);
+}
+
+.accordion-item{
+  margin-bottom: 20px;
+  border-radius: 28px;
+}
+
+.accordion-header{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
+}
+
+.accordion-button{
+  font-weight: bold;
+  color: #000000 !important;
+}
+
+.accordion-button[aria-expanded="true"] {
+  background-color: rgba(174, 39, 238, 0.5);
+}
+
+/* Footer */
+.nav-footer{
+  width: auto;
+  border-bottom: none;
+}
 
 @media (max-width: 992px) {
   .sekilas-produk {
@@ -219,6 +301,14 @@ body {
   }
 
   .sekilas-produk-card {
+    margin-top: 20px;
+  }
+  
+  .nav-footer{
+    width: 100%;
+  }
+
+  .footer-logo{
     margin-top: 20px;
   }
 }
