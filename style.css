@@ -290,6 +290,7 @@ body {
 .nav-footer{
   width: auto;
   border-bottom: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 992px) {
