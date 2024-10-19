@@ -69,6 +69,7 @@ body {
   font-weight: bold;
   border-radius: 28px;
   transition: transform 0.3s ease;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
 }
 #btn-hero:hover {
   transform: scale(1.05);
@@ -103,6 +104,7 @@ body {
   font-family: "Montserrat", sans-serif;
   border-radius: 28px;
   margin-bottom: 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
 }
 
 .card-body {
@@ -151,6 +153,7 @@ body {
 .gallery-img{
   transition: transform 0.3s ease;
   border-radius: 28px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
 }
 .gallery-img:hover {
   transform: scale(1.02); /* Optional: Zoom effect on hover */
@@ -226,6 +229,7 @@ body {
 
 .maps iframe{
   border-radius: 28px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 6px rgba(0, 0, 0, 0.24);
 }
 
 /* Testimoni */
