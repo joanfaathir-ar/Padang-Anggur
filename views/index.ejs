@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Padang Anggur</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/main.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <%- include('partials/header.ejs') %>
+
+        <!-- Hero -->
+        <div class="container px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-12 col-lg-6">
+                    <img src="./images/bibit_anggur.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bibit Anggur"
+                        width="700" height="500" loading="lazy" id="img-hero" />
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="text-body-emphasis lh-1 mb-3">Berbagai Macam Anggur</h1>
+                    <p class="lead">Pilihan tepat tanaman anggurmu hanya disini</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn btn-lg px-5 me-md-2" id="btn-hero">
+                            Order Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sekilas Produk -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 col-md-8 img-card sekilas-produk">
+                    <img src="./images/orang memegang anggur.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col-12 col-lg-6 sekilas-produk">
+                    <div class="sekilas-produk-card">
+                        <div class="row">
+                            <div class="col-6 cards">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="./images/foto katalog/produk1.jpg" alt="" class="card-img" />
+                                        <p>
+                                            <a href="#" class="card-title">Bibit Anggur Impor Paket Hemat</a>
+                                        </p>
+                                        <div class="ket-card">
+                                            <p>Rp150.000</p>
+                                            <p>Terjual 7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 cards">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="./images/foto katalog/produk1.jpg" alt="" class="card-img" />
+                                        <p>
+                                            <a href="#" class="card-title">Bibit Anggur Impor Paket Hemat</a>
+                                        </p>
+                                        <div class="ket-card">
+                                            <p>Rp150.000</p>
+                                            <p>Terjual 7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-lg w-100" id="btn-hero">
+                                Lihat Lebih Banyak
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div class="background-grey">
+            <div class="container mb-5 container-center">
+                <div class="row g-3 justify-content-center my-5">
+                    <div class="col-6 d-flex justify-content-end">
+                        <img src="./images/UI/Frame1.png" alt="Image 1" class="img-fluid gallery-img"
+                            data-bs-toggle="modal" data-bs-target="#lightboxModal1">
+                    </div>
+                    <div class="col-6 gallery-vertical">
+                        <img src="./images/UI/Frame2.png" alt="Image 2" class="img-fluid gallery-img mb-3"
+                            data-bs-toggle="modal" data-bs-target="#lightboxModal2">
+                        <img src="./images/UI/Frame3.jpg" alt="Image 3" class="img-fluid gallery-img"
+                            data-bs-toggle="modal" data-bs-target="#lightboxModal3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lightbox Modals -->
+        <div class="modal fade" id="lightboxModal1" tabindex="-1" aria-labelledby="lightboxModalLabel1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./images/UI/Frame1.png" class="img-fluid" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="lightboxModal2" tabindex="-1" aria-labelledby="lightboxModalLabel2"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./images/UI/Frame2.png" class="img-fluid" alt="Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="lightboxModal3" tabindex="-1" aria-labelledby="lightboxModalLabel3"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="./images/UI/Frame3.jpg" class="img-fluid" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kontak -->
+        <div class="container my-5">
+            <div class="row">
+                <!-- Bagian Kontak -->
+                <div class="col-12 col-md-5 mb-3">
+                    <h2 class="mb-4 text-center kontak-judul">Kontak</h2>
+                    <ul class="kontak p-0">
+                        <li class="kontak-list mb-3">
+                            <img src="./svg/telephone.svg" alt="telephone image" class="kontak-icon">
+                            <a href="#" class="kontak-link">+62 812-7662-2225</a>
+                        </li>
+                        <li class="kontak-list mb-3">
+                            <img src="./svg/email.svg" alt="email icon" class="kontak-icon">
+                            <a href="mailto:padanganggur@gmail.com" class="kontak-link">padanganggur@gmail.com</a>
+                        </li>
+                        <li class="kontak-list mb-3">
+                            <img src="./svg/shopee.svg" alt="shopee icon" class="kontak-icon">
+                            <a href="https://s.shopee.co.id/VoNeW9562" class="kontak-link">Padang Anggur</a>
+                        </li>
+                        <li class="kontak-list">
+                            <img src="./svg/location.svg" alt="location icon" class="kontak-icon">
+                            <a href="https://maps.app.goo.gl/mj6Pac4pxFkGvNw57" class="kontak-link">Gn. Sarik, Kec.
+                                Kuranji, Kota
+                                Padang, Sumatera Barat 25173</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-7">
+                    <!-- Bagian Alamat -->
+                    <h2 class="mb-4 text-center kontak-judul">Alamat</h2>
+                    <div class="maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d607249.2909747036!2d100.11205672909401!3d-0.8999261985688174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b90f8f911f19%3A0x93bebe0a3fd3f4ec!2sPadang%20Anggur!5e0!3m2!1sid!2sid!4v1728030517627!5m2!1sid!2sid"
+                            width="80%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="container faq mt-5">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="faq-video-button justify-content-center align-items-center">
+                        <img src="./images/faq-woman-img.png" alt="" class="img-fluid">
+                        <a href="#"><img src="./images/UI/btn-faq-video.png" alt="" id="btn-video-faq"
+                                class="img-fluid"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 d-flex justify-content-center align-items-center mt-3">
+                    <div class="row justify-content-xl-end">
+                        <div class="col-12 col-xl-11">
+                            <h2 class="h1 mb-3">Pertanyaan yang sering ditanyakan</h2>
+                            <p class="lead fs-4 text-secondary mb-5">Kami harap bisa memberikan jawaban atas
+                                pertanyaanmu</p>
+                            <div class="accordion accordion-flush" id="accordionExample">
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Berapa kisaran lama waktu pengiriman?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>To change your billing information, please follow these steps:</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Bagaimana cara saya memesannya?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>A payment system is a way to transfer money from one person.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            Berapa lama waktu pengiriman?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>To cancel your account, please follow these steps:</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <%- include('partials/footer.ejs') %>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

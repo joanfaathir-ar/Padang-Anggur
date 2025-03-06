@@ -37,13 +37,3 @@
 }
 
 /* Card Produk */
-.row-produk{
-    justify-content: center;
-}
-
-.cards{
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
