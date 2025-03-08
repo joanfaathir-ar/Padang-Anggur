@@ -7,16 +7,24 @@ const app = express();
 const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true}));
-app.use(express.static("public"));
+app.use(express.static('public'));
 
 app.get("/", async(req, res) => {
     try {
-        res.render("index.ejs");
+        res.render('index.ejs');
+    } catch (error) {
+        console.log(error);
+    }
+})
+
+app.get("/produk", async(req, res) => {
+    try {
+        res.render('produk.ejs');
     } catch (error) {
         console.log(error);
     }
 })
 
 app.listen(port, () => {
-    console.log(`App listening on https://localhost:${port}`);
+    console.log(`App listening on http://localhost:${port}`);
 })

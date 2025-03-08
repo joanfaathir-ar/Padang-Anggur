@@ -18,8 +18,8 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="produk.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/produk.css" />
 </head>
 
 <body>
@@ -43,127 +43,51 @@
                 <div class="col-6 col-md-6 col-lg-3 cards">
                     <div class="card">
                         <div class="card-body">
-                            <img src="./img/foto katalog/produk1.jpg" alt="" class="card-img" />
-                            <p>
-                                <a href="#" class="card-title">Bibit Anggur Impor Paket Hemat</a>
-                            </p>
+                            <a href="#" class="product-link" data-image="./images/foto katalog/produk1.jpg"
+                                data-name="Bibit Anggur Impor Paket Exclusive"
+                                data-description="Bibit anggur impor berkualitas, cocok untuk dibudidayakan."
+                                data-price="3.000.000">
+                                <img src="./images/foto katalog/produk1.jpg" alt="Bibit Anggur Impor"
+                                    class="card-img" />
+                            </a>
+                            <p class="card-title">Bibit Anggur Impor Paket Exclusive</p>
                             <div class="ket-card">
-                                <p>Rp150.000</p>
+                                <p>Rp3.000.000</p>
                                 <p>Terjual 7</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-md-6 col-lg-3 cards">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./img/foto katalog/produk1.jpg" alt="" class="card-img" />
-                            <p>
-                                <a href="#" class="card-title">Bibit Anggur Impor Paket Hemat</a>
-                            </p>
-                            <div class="ket-card">
-                                <p>Rp150.000</p>
-                                <p>Terjual 7</p>
+            </div>
+        </div>
+
+        <!-- Modal Bootstrap -->
+        <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header text-white">
+                        <h5 class="modal-title" id="productModalLabel"></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-white">
+                        <div class="row">
+                            <!-- Gambar Produk -->
+                            <div class="col-md-5">
+                                <img id="modalImage" src="" alt="" class="img-fluid rounded shadow">
+                            </div>
+                            <!-- Detail Produk -->
+                            <div class="col-md-7">
+                                <h4 class="fw-bold mb-5 fs-3" id="modalProductName"></h4>
+                                <p class="fs-5 text-muted" id="modalDescription"></p>
+                                <p class="fs-5 fw-bold">Harga: Rp<span id="modalPrice"></span></p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3 cards">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./img/foto katalog/produk1.jpg" alt="" class="card-img" />
-                            <p>
-                                <a href="#" class="card-title">Bibit Anggur Impor Paket Hemat</a>
-                            </p>
-                            <div class="ket-card">
-                                <p>Rp150.000</p>
-                                <p>Terjual 7</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3 cards">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./img/foto katalog/produk1.jpg" alt="" class="card-img" />
-                            <p>
-                                <a href="#" class="card-title">Bibit Anggur Impor Paket Hemat</a>
-                            </p>
-                            <div class="ket-card">
-                                <p>Rp150.000</p>
-                                <p>Terjual 7</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3 cards">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./img/foto katalog/produk1.jpg" alt="" class="card-img" />
-                            <p>
-                                <a href="#" class="card-title">Bibit Anggur Impor Paket Hemat</a>
-                            </p>
-                            <div class="ket-card">
-                                <p>Rp150.000</p>
-                                <p>Terjual 7</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3 cards">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./img/foto katalog/produk1.jpg" alt="" class="card-img" />
-                            <p>
-                                <a href="#" class="card-title">Bibit Anggur Impor Paket Hemat</a>
-                            </p>
-                            <div class="ket-card">
-                                <p>Rp150.000</p>
-                                <p>Terjual 7</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3 cards">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./img/foto katalog/produk1.jpg" alt="" class="card-img" />
-                            <p>
-                                <a href="#" class="card-title">Bibit Anggur Impor Paket Hemat</a>
-                            </p>
-                            <div class="ket-card">
-                                <p>Rp150.000</p>
-                                <p>Terjual 7</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3 cards">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./img/foto katalog/produk1.jpg" alt="" class="card-img" />
-                            <p>
-                                <a href="#" class="card-title">Bibit Anggur Impor Paket Hemat</a>
-                            </p>
-                            <div class="ket-card">
-                                <p>Rp150.000</p>
-                                <p>Terjual 7</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-md-6 col-lg-3 cards">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./img/foto katalog/produk1.jpg" alt="" class="card-img" />
-                            <p>
-                                <a href="#" class="card-title">Bibit Anggur Impor Paket Hemat</a>
-                            </p>
-                            <div class="ket-card">
-                                <p>Rp150.000</p>
-                                <p>Terjual 7</p>
-                            </div>
-                        </div>
+                    <div class="modal-footer d-flex justify-content-end bg-white">
+                        <a id="whatsappLink" href="#" target="_blank" class="btn btn-wa">
+                            <i class="bi bi-whatsapp"></i> Beli via WhatsApp
+                        </a>
                     </div>
                 </div>
             </div>
@@ -174,6 +98,41 @@
 
             <!-- Bootstrap JS -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const productLinks = document.querySelectorAll(".product-link");
+
+                    productLinks.forEach(link => {
+                        link.addEventListener("click", function (event) {
+                            event.preventDefault();
+
+                            const image = this.getAttribute("data-image");
+                            const name = this.getAttribute("data-name");
+                            const description = this.getAttribute("data-description");
+                            const price = this.getAttribute("data-price");
+
+                            // Update modal content
+                            document.getElementById("productModalLabel").textContent = "Beli Sekarang !";
+                            document.getElementById("modalProductName").textContent = name;
+                            document.getElementById("modalImage").src = image;
+                            document.getElementById("modalDescription").textContent = description;
+                            document.getElementById("modalPrice").textContent = price;
+
+                            // Generate WhatsApp link
+                            const phoneNumber = "628123456789"; // Ganti dengan nomor WA penjual
+                            const message = `Halo, saya ingin membeli *${name}* seharga Rp${price}. Apakah masih tersedia?`;
+                            const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+                            document.getElementById("whatsappLink").href = whatsappLink;
+
+                            // Show modal
+                            new bootstrap.Modal(document.getElementById("productModal")).show();
+                        });
+                    });
+                });
+            </script>
+
 </body>
 
 </html>
